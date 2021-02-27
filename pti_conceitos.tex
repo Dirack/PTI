@@ -1,42 +1,34 @@
 \chapter{Produção Textual Individual (PTI)}
 \label{pti}
 
-O estudo referenciado no enunciado desta atividade de Produção Textual Individual (PTI)
-é uma revisão sistemática e meta-análise
-de outros 56 estudos que serviram de base de dados da pesquisa.
-Estes estudos são provenientes das
-instituições:
-Medline (Ovid), Embase, Cochrane CENTRAL, WHO
-International Clinical Trials Registry Platform,
-Clinicaltrials.gov e várias outras fontes relevantes \cite{estudo}.
+A arquitetura de um processador
+pode ser entendida como um contrato entre o hardware e o software,
+esta se refere a um especificação funcional do processador que determina
+como este irá se comportar, quais instruções possui
+e quais instruções é capaz de executar. No caso da arquitetura ARM, esta também expõe um conjunto
+de instruções comuns para os desenvolvedores para permitir diferentes implementações da arquitetura
+em difrentes dispositivos \cite{arm}.
 
-A importância de uma revisão sistemática deste tipo consiste na sua capacidade de integrar
-a informação existente na literatura de maneira eficiente para os profissionais e
-responsáveis pelas políticas de saúde \cite{mulrow}. Isto é feito
-através de uma pesquisa planejada para sumarizar vários estudos
-médicos respondendo uma questão clínica específica e de técnicas de
-metanálise, que consiste na combinação
-quantitativa dos dados dos estudos a partir de métodos estatísticos \cite{meta}.
+Neste ínterim se destacam as arquiteturas de processador ARM e X86, cuja
+diferença se dá principalmente na complexidade do seu conjunto de instruções: O X86 é baseado na
+Complex Instruction Set Computer (CISC) e o ARM é baseado na Reduced Instruction Set Computer (RISC).
+Em resumo, enquanto os processadores ARM (RISC) utilizam várias instruções simples para execução da mesma tarefa \cite{tndbrasil}, a arquitetura CISC transfere a complexidade do software para o hardware reduzindo 
+o número de instruções por programa na
+equação de desempenho do processador \cite{bhandarkar}:
 
+\begin{equation}
+ \frac{tempo}{programa} = \frac{instruções}{programa} \times \frac{ciclos}{instrução} \times \frac{tempo}{ciclo}
+\end{equation}
 
-Neste ínterim, o principal objetivo desta revisão sistemática é
-avaliar se o consumo de adoçantes
-gera algum benefício para
-adultos e crianças saudáveis ou com obesidade ou sobrepeso. Oque pode ser
-resumido na seguinte questão-problema: Existe alguma associação entre o consumo de adoçantes
-e o emagrecimento ou algum outro benefício para a saúde?
-Um objetivo menor do estudo é buscar evidências de efeitos colaterais ou eventos adversos,
-pois a comunidade médica apresenta a preocupação com a hipótese dos adoçantes serem causa
-de cáries e diabetes \cite{estudo}. 
+Os processadores ARM possuem a vantagem de consumir menos energia, maior eficiência térmica (dissipação de calor) e são
+mais simples do que os X86. Por isso, esta arquitetura é ideal para dispositivos compactos, como smartphones e tablets,
+já que estes não podem contar com sistemas complexos de dissipação de calor como coolers e podem utilizar processadores
+de menor desempenho \cite{canaltech}.
 
-A conclusão desta revisão sistemática é
-que a partir dos estudos analisados não é possível observar alguma correlação entre
-emagrecimento ou benefícios e malefícios à saúde e o consumo de adoçantes.
-Pois, não foi observada diferença significativa
-entre o grupo exposto ao consumo de adoçantes e não exposto (grupo de controle, que não consumiu adoçantes em sua dieta durante o período do estudo) em relação aos parâmetros observados na pesquisa.
-Também foi observado em alguns poucos estudos desta revisão
-que alguns participantes obtiveram pequenos benefícios: Como
-redução no Índice de Massa Corpórea (IMC) e no nível de açúcar no sangue.
-Todavia, esta observação foi feita em poucos estudos e em um limitado número
-de participantes, por isso esta é considerada uma evidência fraca do possível benefício
-do consumo de adoçantes para a saúde \cite{estudo}.
+Estes processadores podem dar vantagens para as empresas que se adaptarem, como a Apple, que busca
+substituiu os processadores X86 pelos ARM no Mac.
+A vantagem é o baixo consumo de energia e maior autonomia da bateria destes nootebooks.
+A desvantagem é que os programas e aplicativos precisam ser convertidos de X86 para a arquitetura ARM. Isto
+pode resultar em problemas de compatibilidade.
+Além disso, utilizar emuladores para rodar programas x86 pode não ser viável e ter o efeito
+adverso de diminuir a autonomia da bateria e redução de performance do computador \cite{super}.
