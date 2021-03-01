@@ -20,15 +20,17 @@ equação de desempenho do processador \cite{bhandarkar}:
  \frac{tempo}{programa} = \frac{instruções}{programa} \times \frac{ciclos}{instrução} \times \frac{tempo}{ciclo}
 \end{equation}
 
-Os processadores ARM possuem a vantagem de consumir menos energia, maior eficiência térmica (dissipação de calor) e são
+Os processadores ARM possuem a vantagem de consumir menos energia, maior eficiência térmica (menor dissipação de calor) e são
 mais simples do que os X86. Por isso, esta arquitetura é ideal para dispositivos compactos, como smartphones e tablets,
-já que estes não podem contar com sistemas complexos de dissipação de calor como coolers e podem utilizar processadores
+já que estes não podem contar com sistemas complexos de dissipação de calor e utilizam processadores
 de menor desempenho \cite{canaltech}.
 
-Estes processadores podem dar vantagens para as empresas que se adaptarem, como a Apple, que busca
-substituiu os processadores X86 pelos ARM no Mac.
-A vantagem é o baixo consumo de energia e maior autonomia da bateria destes nootebooks.
-A desvantagem é que os programas e aplicativos precisam ser convertidos de X86 para a arquitetura ARM. Isto
-pode resultar em problemas de compatibilidade.
-Além disso, utilizar emuladores para rodar programas x86 pode não ser viável e ter o efeito
-adverso de diminuir a autonomia da bateria e redução de performance do computador \cite{super}.
+Assim, empresas que conseguirem subtituir os processadores X86 pelos ARM podem obter algumas
+vantagens: Como o baixo consumo de energia e maior autonomia da bateria, no caso de nootebooks.
+Uma destas empresas é a Apple, que busca substituir os processadores X86 para ARM nos computadores Mac \cite{super}.
+A principal desvantagem desta substituição é que os programas e aplicativos
+precisam ser convertidos do conjunto de instruções de X86 para o conjunto da arquitetura ARM,
+antes desta conversão haverão problemas de compatibilidade.
+Uma solução seria utilizar emuladores para rodar programas X86 em uma plataforma com
+processador ARM, oque pode não ser viável e ter o efeito
+adverso de diminuir a autonomia da bateria e redução da performance do computador.
